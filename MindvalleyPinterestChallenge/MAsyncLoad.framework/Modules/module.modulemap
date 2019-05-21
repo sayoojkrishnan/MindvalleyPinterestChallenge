@@ -1,0 +1,11 @@
+framework module MAsyncLoad {
+  umbrella header "MAsyncLoad.h"
+
+  export *
+  module * { export * }
+}
+
+module MAsyncLoad.Swift {
+    header "MAsyncLoad-Swift.h"
+    requires objc
+}

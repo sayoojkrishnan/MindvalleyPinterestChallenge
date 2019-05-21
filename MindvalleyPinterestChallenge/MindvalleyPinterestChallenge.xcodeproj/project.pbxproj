@@ -1,0 +1,755 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8777064E22931DEA00B05487 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8777064D22931DEA00B05487 /* AppDelegate.swift */; };
+		8777065322931DEA00B05487 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8777065122931DEA00B05487 /* Main.storyboard */; };
+		8777065522931DEC00B05487 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8777065422931DEC00B05487 /* Assets.xcassets */; };
+		8777065822931DEC00B05487 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8777065622931DEC00B05487 /* LaunchScreen.storyboard */; };
+		8777066322931DEC00B05487 /* MindvalleyPinterestChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8777066222931DEC00B05487 /* MindvalleyPinterestChallengeTests.swift */; };
+		8777066E22931DEC00B05487 /* MindvalleyPinterestChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8777066D22931DEC00B05487 /* MindvalleyPinterestChallengeUITests.swift */; };
+		8777067F22931E5200B05487 /* PinBoardCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8777067E22931E5200B05487 /* PinBoardCollectionViewController.swift */; };
+		8777068522931E8600B05487 /* PinBoardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8777068022931E8600B05487 /* PinBoardCollectionViewCell.swift */; };
+		8777068622931E8600B05487 /* CategoryTagsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8777068122931E8600B05487 /* CategoryTagsView.swift */; };
+		8777068722931E8600B05487 /* CategoryTagCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8777068222931E8600B05487 /* CategoryTagCell.swift */; };
+		8777068822931E8600B05487 /* PinBoardPaginationIndicatorFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8777068322931E8600B05487 /* PinBoardPaginationIndicatorFooter.swift */; };
+		8777068922931E8600B05487 /* PinBordUserProfileCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8777068422931E8600B05487 /* PinBordUserProfileCardView.swift */; };
+		8777068F22931EC800B05487 /* PIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8777068D22931EC800B05487 /* PIn.swift */; };
+		8777069022931EC800B05487 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8777068E22931EC800B05487 /* User.swift */; };
+		8777069722931F1200B05487 /* String+Extesions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8777069422931F1200B05487 /* String+Extesions.swift */; };
+		8777069822931F1200B05487 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8777069522931F1200B05487 /* UIColor+Extension.swift */; };
+		8777069922931F1200B05487 /* UICollectionView+Extesions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8777069622931F1200B05487 /* UICollectionView+Extesions.swift */; };
+		8777069E22931F5A00B05487 /* PinBoardDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8777069D22931F5A00B05487 /* PinBoardDataProvider.swift */; };
+		877706C82293EE4900B05487 /* PinBoardProviderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877706C72293EE4900B05487 /* PinBoardProviderTest.swift */; };
+		877706CA2293EFF800B05487 /* MAsyncLoad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 877706C92293EFF800B05487 /* MAsyncLoad.framework */; };
+		877706CB2293F00300B05487 /* MAsyncLoad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 877706C92293EFF800B05487 /* MAsyncLoad.framework */; };
+		877706CC2293F00400B05487 /* MAsyncLoad.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 877706C92293EFF800B05487 /* MAsyncLoad.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		877706D12293F7D600B05487 /* UIColorExtesionsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877706D02293F7D600B05487 /* UIColorExtesionsTest.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8777065F22931DEC00B05487 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8777064222931DEA00B05487 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8777064922931DEA00B05487;
+			remoteInfo = MindvalleyPinterestChallenge;
+		};
+		8777066A22931DEC00B05487 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8777064222931DEA00B05487 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8777064922931DEA00B05487;
+			remoteInfo = MindvalleyPinterestChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		877706CD2293F00400B05487 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				877706CC2293F00400B05487 /* MAsyncLoad.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8777064A22931DEA00B05487 /* MindvalleyPinterestChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MindvalleyPinterestChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8777064D22931DEA00B05487 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8777065222931DEA00B05487 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8777065422931DEC00B05487 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8777065722931DEC00B05487 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8777065922931DEC00B05487 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8777065E22931DEC00B05487 /* MindvalleyPinterestChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MindvalleyPinterestChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8777066222931DEC00B05487 /* MindvalleyPinterestChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindvalleyPinterestChallengeTests.swift; sourceTree = "<group>"; };
+		8777066422931DEC00B05487 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8777066922931DEC00B05487 /* MindvalleyPinterestChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MindvalleyPinterestChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8777066D22931DEC00B05487 /* MindvalleyPinterestChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindvalleyPinterestChallengeUITests.swift; sourceTree = "<group>"; };
+		8777066F22931DEC00B05487 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8777067E22931E5200B05487 /* PinBoardCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinBoardCollectionViewController.swift; sourceTree = "<group>"; };
+		8777068022931E8600B05487 /* PinBoardCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinBoardCollectionViewCell.swift; sourceTree = "<group>"; };
+		8777068122931E8600B05487 /* CategoryTagsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryTagsView.swift; sourceTree = "<group>"; };
+		8777068222931E8600B05487 /* CategoryTagCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryTagCell.swift; sourceTree = "<group>"; };
+		8777068322931E8600B05487 /* PinBoardPaginationIndicatorFooter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinBoardPaginationIndicatorFooter.swift; sourceTree = "<group>"; };
+		8777068422931E8600B05487 /* PinBordUserProfileCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinBordUserProfileCardView.swift; sourceTree = "<group>"; };
+		8777068D22931EC800B05487 /* PIn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PIn.swift; sourceTree = "<group>"; };
+		8777068E22931EC800B05487 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		8777069422931F1200B05487 /* String+Extesions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extesions.swift"; sourceTree = "<group>"; };
+		8777069522931F1200B05487 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		8777069622931F1200B05487 /* UICollectionView+Extesions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extesions.swift"; sourceTree = "<group>"; };
+		8777069D22931F5A00B05487 /* PinBoardDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinBoardDataProvider.swift; sourceTree = "<group>"; };
+		877706C72293EE4900B05487 /* PinBoardProviderTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinBoardProviderTest.swift; sourceTree = "<group>"; };
+		877706C92293EFF800B05487 /* MAsyncLoad.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MAsyncLoad.framework; sourceTree = "<group>"; };
+		877706D02293F7D600B05487 /* UIColorExtesionsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtesionsTest.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8777064722931DEA00B05487 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				877706CA2293EFF800B05487 /* MAsyncLoad.framework in Frameworks */,
+				877706CB2293F00300B05487 /* MAsyncLoad.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8777065B22931DEC00B05487 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8777066622931DEC00B05487 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8777064122931DEA00B05487 = {
+			isa = PBXGroup;
+			children = (
+				877706C92293EFF800B05487 /* MAsyncLoad.framework */,
+				8777064C22931DEA00B05487 /* MindvalleyPinterestChallenge */,
+				8777066122931DEC00B05487 /* MindvalleyPinterestChallengeTests */,
+				8777066C22931DEC00B05487 /* MindvalleyPinterestChallengeUITests */,
+				8777064B22931DEA00B05487 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8777064B22931DEA00B05487 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8777064A22931DEA00B05487 /* MindvalleyPinterestChallenge.app */,
+				8777065E22931DEC00B05487 /* MindvalleyPinterestChallengeTests.xctest */,
+				8777066922931DEC00B05487 /* MindvalleyPinterestChallengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8777064C22931DEA00B05487 /* MindvalleyPinterestChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				8777069B22931F3E00B05487 /* Data */,
+				8777069A22931F1900B05487 /* Extensions */,
+				8777069122931ECD00B05487 /* Model */,
+				8777068A22931E9000B05487 /* Views */,
+				8777067D22931E2500B05487 /* Controllers */,
+				8777067B22931E0B00B05487 /* Storyboard */,
+				8777065422931DEC00B05487 /* Assets.xcassets */,
+				8777067C22931E1900B05487 /* Supporting Files */,
+			);
+			path = MindvalleyPinterestChallenge;
+			sourceTree = "<group>";
+		};
+		8777066122931DEC00B05487 /* MindvalleyPinterestChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				8777066222931DEC00B05487 /* MindvalleyPinterestChallengeTests.swift */,
+				8777066422931DEC00B05487 /* Info.plist */,
+				877706C72293EE4900B05487 /* PinBoardProviderTest.swift */,
+				877706D02293F7D600B05487 /* UIColorExtesionsTest.swift */,
+			);
+			path = MindvalleyPinterestChallengeTests;
+			sourceTree = "<group>";
+		};
+		8777066C22931DEC00B05487 /* MindvalleyPinterestChallengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8777066D22931DEC00B05487 /* MindvalleyPinterestChallengeUITests.swift */,
+				8777066F22931DEC00B05487 /* Info.plist */,
+			);
+			path = MindvalleyPinterestChallengeUITests;
+			sourceTree = "<group>";
+		};
+		8777067B22931E0B00B05487 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				8777065122931DEA00B05487 /* Main.storyboard */,
+				8777065622931DEC00B05487 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		8777067C22931E1900B05487 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8777065922931DEC00B05487 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8777067D22931E2500B05487 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8777067E22931E5200B05487 /* PinBoardCollectionViewController.swift */,
+				8777064D22931DEA00B05487 /* AppDelegate.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8777068A22931E9000B05487 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8777068C22931EA900B05487 /* PinBoard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8777068B22931E9B00B05487 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				8777068222931E8600B05487 /* CategoryTagCell.swift */,
+				8777068022931E8600B05487 /* PinBoardCollectionViewCell.swift */,
+				8777068322931E8600B05487 /* PinBoardPaginationIndicatorFooter.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		8777068C22931EA900B05487 /* PinBoard */ = {
+			isa = PBXGroup;
+			children = (
+				8777068B22931E9B00B05487 /* Cells */,
+				8777068122931E8600B05487 /* CategoryTagsView.swift */,
+				8777068422931E8600B05487 /* PinBordUserProfileCardView.swift */,
+			);
+			path = PinBoard;
+			sourceTree = "<group>";
+		};
+		8777069122931ECD00B05487 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8777068D22931EC800B05487 /* PIn.swift */,
+				8777068E22931EC800B05487 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8777069A22931F1900B05487 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8777069422931F1200B05487 /* String+Extesions.swift */,
+				8777069622931F1200B05487 /* UICollectionView+Extesions.swift */,
+				8777069522931F1200B05487 /* UIColor+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8777069B22931F3E00B05487 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				8777069C22931F4D00B05487 /* Providers */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		8777069C22931F4D00B05487 /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				8777069D22931F5A00B05487 /* PinBoardDataProvider.swift */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8777064922931DEA00B05487 /* MindvalleyPinterestChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8777067222931DEC00B05487 /* Build configuration list for PBXNativeTarget "MindvalleyPinterestChallenge" */;
+			buildPhases = (
+				8777064622931DEA00B05487 /* Sources */,
+				8777064722931DEA00B05487 /* Frameworks */,
+				8777064822931DEA00B05487 /* Resources */,
+				877706CD2293F00400B05487 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MindvalleyPinterestChallenge;
+			productName = MindvalleyPinterestChallenge;
+			productReference = 8777064A22931DEA00B05487 /* MindvalleyPinterestChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8777065D22931DEC00B05487 /* MindvalleyPinterestChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8777067522931DEC00B05487 /* Build configuration list for PBXNativeTarget "MindvalleyPinterestChallengeTests" */;
+			buildPhases = (
+				8777065A22931DEC00B05487 /* Sources */,
+				8777065B22931DEC00B05487 /* Frameworks */,
+				8777065C22931DEC00B05487 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8777066022931DEC00B05487 /* PBXTargetDependency */,
+			);
+			name = MindvalleyPinterestChallengeTests;
+			productName = MindvalleyPinterestChallengeTests;
+			productReference = 8777065E22931DEC00B05487 /* MindvalleyPinterestChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8777066822931DEC00B05487 /* MindvalleyPinterestChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8777067822931DEC00B05487 /* Build configuration list for PBXNativeTarget "MindvalleyPinterestChallengeUITests" */;
+			buildPhases = (
+				8777066522931DEC00B05487 /* Sources */,
+				8777066622931DEC00B05487 /* Frameworks */,
+				8777066722931DEC00B05487 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8777066B22931DEC00B05487 /* PBXTargetDependency */,
+			);
+			name = MindvalleyPinterestChallengeUITests;
+			productName = MindvalleyPinterestChallengeUITests;
+			productReference = 8777066922931DEC00B05487 /* MindvalleyPinterestChallengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8777064222931DEA00B05487 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = CDNS;
+				TargetAttributes = {
+					8777064922931DEA00B05487 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					8777065D22931DEC00B05487 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 8777064922931DEA00B05487;
+					};
+					8777066822931DEC00B05487 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 8777064922931DEA00B05487;
+					};
+				};
+			};
+			buildConfigurationList = 8777064522931DEA00B05487 /* Build configuration list for PBXProject "MindvalleyPinterestChallenge" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8777064122931DEA00B05487;
+			productRefGroup = 8777064B22931DEA00B05487 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8777064922931DEA00B05487 /* MindvalleyPinterestChallenge */,
+				8777065D22931DEC00B05487 /* MindvalleyPinterestChallengeTests */,
+				8777066822931DEC00B05487 /* MindvalleyPinterestChallengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8777064822931DEA00B05487 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8777065822931DEC00B05487 /* LaunchScreen.storyboard in Resources */,
+				8777065522931DEC00B05487 /* Assets.xcassets in Resources */,
+				8777065322931DEA00B05487 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8777065C22931DEC00B05487 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8777066722931DEC00B05487 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8777064622931DEA00B05487 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8777068522931E8600B05487 /* PinBoardCollectionViewCell.swift in Sources */,
+				8777068722931E8600B05487 /* CategoryTagCell.swift in Sources */,
+				8777068922931E8600B05487 /* PinBordUserProfileCardView.swift in Sources */,
+				8777069822931F1200B05487 /* UIColor+Extension.swift in Sources */,
+				8777068F22931EC800B05487 /* PIn.swift in Sources */,
+				8777068622931E8600B05487 /* CategoryTagsView.swift in Sources */,
+				8777069E22931F5A00B05487 /* PinBoardDataProvider.swift in Sources */,
+				8777069922931F1200B05487 /* UICollectionView+Extesions.swift in Sources */,
+				8777069022931EC800B05487 /* User.swift in Sources */,
+				8777064E22931DEA00B05487 /* AppDelegate.swift in Sources */,
+				8777067F22931E5200B05487 /* PinBoardCollectionViewController.swift in Sources */,
+				8777068822931E8600B05487 /* PinBoardPaginationIndicatorFooter.swift in Sources */,
+				8777069722931F1200B05487 /* String+Extesions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8777065A22931DEC00B05487 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				877706D12293F7D600B05487 /* UIColorExtesionsTest.swift in Sources */,
+				8777066322931DEC00B05487 /* MindvalleyPinterestChallengeTests.swift in Sources */,
+				877706C82293EE4900B05487 /* PinBoardProviderTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8777066522931DEC00B05487 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8777066E22931DEC00B05487 /* MindvalleyPinterestChallengeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8777066022931DEC00B05487 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8777064922931DEA00B05487 /* MindvalleyPinterestChallenge */;
+			targetProxy = 8777065F22931DEC00B05487 /* PBXContainerItemProxy */;
+		};
+		8777066B22931DEC00B05487 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8777064922931DEA00B05487 /* MindvalleyPinterestChallenge */;
+			targetProxy = 8777066A22931DEC00B05487 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8777065122931DEA00B05487 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8777065222931DEA00B05487 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8777065622931DEC00B05487 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8777065722931DEC00B05487 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8777067022931DEC00B05487 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8777067122931DEC00B05487 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8777067322931DEC00B05487 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GK5XHW9J8B;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/MindvalleyPinterestChallenge/Data",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/MindvalleyPinterestChallenge/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = in.co.cdns.buildbysayooj.MindvalleyPinterestChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8777067422931DEC00B05487 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GK5XHW9J8B;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/MindvalleyPinterestChallenge/Data",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/MindvalleyPinterestChallenge/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = in.co.cdns.buildbysayooj.MindvalleyPinterestChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8777067622931DEC00B05487 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GK5XHW9J8B;
+				INFOPLIST_FILE = MindvalleyPinterestChallengeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = in.co.cdns.buildbysayooj.MindvalleyPinterestChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MindvalleyPinterestChallenge.app/MindvalleyPinterestChallenge";
+			};
+			name = Debug;
+		};
+		8777067722931DEC00B05487 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GK5XHW9J8B;
+				INFOPLIST_FILE = MindvalleyPinterestChallengeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = in.co.cdns.buildbysayooj.MindvalleyPinterestChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MindvalleyPinterestChallenge.app/MindvalleyPinterestChallenge";
+			};
+			name = Release;
+		};
+		8777067922931DEC00B05487 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GK5XHW9J8B;
+				INFOPLIST_FILE = MindvalleyPinterestChallengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = in.co.cdns.buildbysayooj.MindvalleyPinterestChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MindvalleyPinterestChallenge;
+			};
+			name = Debug;
+		};
+		8777067A22931DEC00B05487 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GK5XHW9J8B;
+				INFOPLIST_FILE = MindvalleyPinterestChallengeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = in.co.cdns.buildbysayooj.MindvalleyPinterestChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MindvalleyPinterestChallenge;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8777064522931DEA00B05487 /* Build configuration list for PBXProject "MindvalleyPinterestChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8777067022931DEC00B05487 /* Debug */,
+				8777067122931DEC00B05487 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8777067222931DEC00B05487 /* Build configuration list for PBXNativeTarget "MindvalleyPinterestChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8777067322931DEC00B05487 /* Debug */,
+				8777067422931DEC00B05487 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8777067522931DEC00B05487 /* Build configuration list for PBXNativeTarget "MindvalleyPinterestChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8777067622931DEC00B05487 /* Debug */,
+				8777067722931DEC00B05487 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8777067822931DEC00B05487 /* Build configuration list for PBXNativeTarget "MindvalleyPinterestChallengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8777067922931DEC00B05487 /* Debug */,
+				8777067A22931DEC00B05487 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8777064222931DEA00B05487 /* Project object */;
+}
