@@ -104,23 +104,24 @@ open class CachedImageView : UIImageView {
             setupAndStartActivityIndicator()
         }
         im.start(operation: fetchOperation!)
-        fetchOperation?.completionBlock =  {
-            if url == self.imageURL {
-                if self.fetchOperation?.image != nil {
+        fetchOperation?.completionBlock =  { [weak self]  in
+            guard let this = self else {return}
+            if url == this.imageURL {
+                if this.fetchOperation?.image != nil {
                     DispatchQueue.main.async {
-                        UIView.transition(with: self,
+                        UIView.transition(with: this,
                                           duration:0.5,
                                           options: .transitionCrossDissolve,
-                                          animations: { self.image = self.fetchOperation?.image },
+                                          animations: { this.image = this.fetchOperation?.image },
                                           completion: nil)
                     }
                 }else {
                     DispatchQueue.main.async {
-                        self.stopActivityIndicator()
+                        this.stopActivityIndicator()
                         if options.contains(.withActivityIndicator){
-                            self.showError()
+                            this.showError()
                         }else{
-                            self.image = self.failurePlaceholder
+                            this.image = this.failurePlaceholder
                         }
                     }
                 }

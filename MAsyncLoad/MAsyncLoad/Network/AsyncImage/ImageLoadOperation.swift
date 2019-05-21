@@ -16,21 +16,22 @@ public class ImageLoadOperation : AsyncOperation  {
     }
     
     override public func main() {
-        NetworkClient.shared.fetch(url: url) { (resultRes) in
-            guard self.isCancelled == false else {
-                self.image = nil
-                self.state = .finished
+        NetworkClient.shared.fetch(url: url) {[weak self] (resultRes) in
+            guard let this = self else {return}
+            guard this.isCancelled == false else {
+                this.image = nil
+                this.state = .finished
                 return
             }
             switch resultRes {
             case .Success(let data):
                 if let imageData = data,let i = UIImage(data: imageData){
-                    self.image = i
+                    this.image = i
                 }
             case .Error(_) :
-                self.image = nil
+                this.image = nil
             }
-            self.state = .finished
+            this.state = .finished
         }
     }
     

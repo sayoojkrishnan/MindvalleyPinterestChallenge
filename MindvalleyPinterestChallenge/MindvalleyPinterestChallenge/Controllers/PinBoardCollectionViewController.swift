@@ -91,7 +91,6 @@ class PinBoardCollectionViewController: UIViewController {
         super.viewDidLoad()
         setupSubViews()
         loadPins(type: .load)
-        
     }
     
     
@@ -113,31 +112,36 @@ class PinBoardCollectionViewController: UIViewController {
         if type == .load {
             showLoadingSpinner()
         }
-        pinsProvider.getPins { (loadedPins, error) in
+        pinsProvider.getPins { [weak self] (loadedPins, error) in
+            
+            guard let this = self else{
+                return
+            }
+            
             guard error == nil else{
                 DispatchQueue.main.async {
-                    self.hideLoadingSpinner()
-                    self.showErrorAlert()
+                    this.hideLoadingSpinner()
+                    this.showErrorAlert()
                 }
                 return
             }
             switch type {
             case .load , .reload :
-                self.pins = loadedPins
+                this.pins = loadedPins
                 DispatchQueue.main.async {
-                    self.collectionView.reloadData()
-                    self.endRefreshing()
+                    this.collectionView.reloadData()
+                    this.endRefreshing()
                 }
             case .paginate :
-                let indexPaths = Array(self.pins.count...(self.pins.count-1+loadedPins.count)).map({IndexPath(item: $0, section: 0)})
-                let _ =  loadedPins.map({self.pins.append($0)})
+                let indexPaths = Array(this.pins.count...(this.pins.count-1+loadedPins.count)).map({IndexPath(item: $0, section: 0)})
+                let _ =  loadedPins.map({this.pins.append($0)})
                 DispatchQueue.main.async {
-                    self.collectionView.insertItems(at: indexPaths)
+                    this.collectionView.insertItems(at: indexPaths)
                 }
             }
-            self.state = .ready
+            this.state = .ready
             DispatchQueue.main.async {
-                 self.hideLoadingSpinner()
+                 this.hideLoadingSpinner()
             }
         }
     }
@@ -148,7 +152,7 @@ class PinBoardCollectionViewController: UIViewController {
             self.currentPage += 1
             
             // To fake a delay in pagination
-            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1) { [unowned self] in
                 self.loadPins(type: .paginate)
             }
         }

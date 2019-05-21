@@ -38,6 +38,9 @@ class CategoryTagCell: UICollectionViewCell {
         super.layoutSubviews()
         contentView.layer.cornerRadius = contentView.bounds.height / 2
     }
+    deinit {
+        print("deinit category cell")
+    }
     
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
         super.traitCollectionDidChange(previousTraitCollection)

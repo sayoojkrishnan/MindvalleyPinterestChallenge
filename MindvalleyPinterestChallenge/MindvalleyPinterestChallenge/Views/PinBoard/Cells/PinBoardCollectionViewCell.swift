@@ -51,6 +51,10 @@ class PinBoardCollectionViewCell: UICollectionViewCell {
         configureCornerRadiusAndShadow()
     }
     
+    deinit {
+        print("Deinit board cell")
+    }
+    
     
     func configureCornerRadiusAndShadow(){
         contentView.layer.cornerRadius = 10
